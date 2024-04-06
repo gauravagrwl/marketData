@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: Market Data API
+
+springdoc:
+  swagger-ui:
+    operations-sorter: method
+  api-docs:
+    path: /api-docs
+  show-actuator: true
+  use-management-port: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  server:
+    port: 9090
+server:
+  port: 8086
